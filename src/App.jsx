@@ -625,12 +625,12 @@ function App() {
       </section>
 
       {/* Portfolio Section */}
-      {/* Portfolio Section */}
+    {/* Portfolio Section */}
 <section id="portfolio" className="py-24 px-4 bg-[#070d1a]">
   <div className="max-w-7xl mx-auto">
 
+    {/* Section Title */}
     <div className="text-center mb-16">
-
       <h2 className="text-5xl font-bold mb-6 text-white">
         Featured{" "}
         <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
@@ -641,14 +641,22 @@ function App() {
       <p className="text-xl text-gray-400 max-w-2xl mx-auto">
         A showcase of my recent projects and creative solutions
       </p>
-
     </div>
 
     <div className="grid md:grid-cols-2 gap-8">
 
-      {/* Travel Website */}
-      <div className="group relative bg-[#111a2b] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-800">
+      {/* ==================== Travel Website ==================== */}
+      <div
+        onClick={() =>
+          window.open(
+            "https://shahdk22.github.io/Travel-Website/",
+            "_blank"
+          )
+        }
+        className="group relative bg-[#111a2b] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-800 cursor-pointer"
+      >
 
+        {/* Image */}
         <div className="relative overflow-hidden">
 
           <img
@@ -657,23 +665,28 @@ function App() {
             className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
           />
 
+          {/* Hover Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-emerald-500 to-cyan-500 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
 
             <div className="flex space-x-4">
 
+              {/* Live Website */}
               <a
-                href="https://github.com/shahdk22/Travel-Website"
+                href="https://shahdk22.github.io/Travel-Website/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
                 className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors duration-200"
               >
                 <i className="fas fa-external-link-alt"></i>
               </a>
 
+              {/* GitHub */}
               <a
                 href="https://github.com/shahdk22/Travel-Website"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
                 className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors duration-200"
               >
                 <i className="fab fa-github"></i>
@@ -682,9 +695,9 @@ function App() {
             </div>
 
           </div>
-
         </div>
 
+        {/* Content */}
         <div className="p-8">
 
           <div className="flex items-center justify-between mb-4">
@@ -706,6 +719,7 @@ function App() {
             packages with a modern and interactive user experience.
           </p>
 
+          {/* Technologies */}
           <div className="flex flex-wrap gap-2">
 
             <span className="px-3 py-1 bg-white/5 text-gray-400 rounded-full text-sm">
@@ -727,38 +741,51 @@ function App() {
           </div>
 
         </div>
-
       </div>
 
 
-      {/* Coffee Shop */}
-      <div className="group relative bg-[#111a2b] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-800">
+      {/* ==================== Bottle Landing Page ==================== */}
+      <div
+        onClick={() =>
+          window.open(
+            "https://shahdk22.github.io/Botol-Landing-Page/",
+            "_blank"
+          )
+        }
+        className="group relative bg-[#111a2b] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-800 cursor-pointer"
+      >
 
+        {/* Image */}
         <div className="relative overflow-hidden">
 
           <img
-            src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="Coffee Shop"
+            src="https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Bottle Landing Page"
             className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
           />
 
+          {/* Hover Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-orange-500 to-amber-500 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
 
             <div className="flex space-x-4">
 
+              {/* Live Website */}
               <a
-                href="https://github.com/shahdk22/Coffee-Shope"
+                href="https://shahdk22.github.io/Botol-Landing-Page/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
                 className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors duration-200"
               >
                 <i className="fas fa-external-link-alt"></i>
               </a>
 
+              {/* GitHub */}
               <a
-                href="https://github.com/shahdk22/Coffee-Shope"
+                href="https://github.com/shahdk22/Botol-Landing-Page"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
                 className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors duration-200"
               >
                 <i className="fab fa-github"></i>
@@ -767,30 +794,31 @@ function App() {
             </div>
 
           </div>
-
         </div>
 
+        {/* Content */}
         <div className="p-8">
 
           <div className="flex items-center justify-between mb-4">
 
             <span className="px-3 py-1 bg-orange-400/10 text-orange-300 rounded-full text-sm font-medium">
-              Web Application
+              Landing Page
             </span>
 
-            <i className="fas fa-coffee text-gray-500 group-hover:text-orange-400 transition-colors duration-300"></i>
+            <i className="fas fa-bottle-water text-gray-500 group-hover:text-orange-400 transition-colors duration-300"></i>
 
           </div>
 
           <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-orange-400 transition-colors duration-300">
-            Coffee Shop
+            Bottle Landing Page
           </h3>
 
           <p className="text-gray-400 mb-6 leading-relaxed">
-            A modern and responsive coffee shop website with an attractive
-            interface and interactive user experience.
+            A modern and responsive bottle landing page with a clean interface,
+            attractive design, and interactive user experience.
           </p>
 
+          {/* Technologies */}
           <div className="flex flex-wrap gap-2">
 
             <span className="px-3 py-1 bg-white/5 text-gray-400 rounded-full text-sm">
@@ -808,11 +836,10 @@ function App() {
           </div>
 
         </div>
-
       </div>
 
 
-      {/* E-Learning Platform */}
+      {/* ==================== E-Learning Platform ==================== */}
       <div className="group relative bg-[#111a2b] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-800">
 
         <div className="relative overflow-hidden">
@@ -867,11 +894,10 @@ function App() {
           </div>
 
         </div>
-
       </div>
 
 
-      {/* Healthcare App */}
+      {/* ==================== Healthcare App ==================== */}
       <div className="group relative bg-[#111a2b] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-800">
 
         <div className="relative overflow-hidden">
@@ -926,14 +952,11 @@ function App() {
           </div>
 
         </div>
-
       </div>
 
     </div>
-
   </div>
 </section>
-
       {/* Testimonials Section */}
       <section
         id="testimonials"
